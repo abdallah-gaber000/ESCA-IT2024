@@ -1,0 +1,432 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    transition: 0.2s;
+
+}
+
+
+        /*section 1 style*/
+.block1, .block2, .block3
+{
+    display: flex;
+    background-color: #f3f3f7;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+.block1 p, .block2 p, .block3 p, .picsec p, footer p
+{
+    font-size: 1vw;
+}
+.block1child1, .block2child1, .block3child1
+{
+    width: 40%;
+}
+
+.block1child2, .block3child2
+{
+    width: 40%;
+    color: #6b6b6f;
+}
+
+.block1child2 h2, .block3child2 h2
+{
+    color: #56a085 !important;
+    margin: 0 0 40px 0;
+}
+
+.block1child2 h2, .block3child2 h2, .block2child2 h2
+{
+    font-weight: bold;
+    width: 75%;
+    font-size: xx-large;
+}
+
+.block1child2, .block2child2, .block3child2
+{
+    text-align: start;
+    padding: 4vw;
+}
+
+.block1child1 img, .block2child1 img, .block3child1 img
+{
+    width: 100%;
+}
+
+.block2child2
+{
+    width: 40%;
+    color: azure;
+}
+
+.block2child2 h2
+{
+    color: #5bb9a8;
+    margin: 0 0 40px 0;
+}
+
+.block2child2 p, .block3child2 p
+{
+    margin: 10px 0;
+}
+
+.block2
+{
+    background-color: #232f4a !important;
+}
+
+.block3child2Button
+{
+    background-color: #34da96;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    font-size: 60%;
+    font-weight: bold;
+    margin-top: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.block3child2Button:hover
+{
+    background-color: #35c287;
+}
+
+.block3child2Button:hover  a
+{
+    color: azure;
+}
+
+.block3child2Button a
+{
+    color: rgb(29, 36, 36);
+    text-decoration: none;
+    
+}
+
+        /*Cards style*/
+/* the outside box style*/
+.cards
+{
+    background-color: #f3f3f7;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* the text above the cards*/
+
+.textAboveCards
+{
+    margin: 0 0 25px 0;
+    color: #56a085;
+    font-size: xx-large;
+}
+
+/* the card box style*/
+.cardBox
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.firstRow, .secondRow
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.card
+{
+    background-color: #56a085;
+    margin: 1vw;
+    width: 25vw;
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 10px #8d9d97;
+}
+/*card hover*/
+.card:hover
+{
+    width: 24vw;
+    height: 30vw;
+    .textcard
+    {
+        font-size: larger;
+    }
+}
+.imgcard1, .imgcard2, .imgcard3, .imgcard4, .imgcard5, .imgcard6
+{
+    width: 100%;
+    filter: saturate(0.7);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 12vw;
+    align-items: center;
+    padding: 20%;
+    display: flex;
+    color: azure;
+}
+
+.imgcard1
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/RS26324_GettyImages-1213877331-lpr.webp?itok=c0eFXI7b);
+}
+
+.imgcard2
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/Tiger%20in%20lake.webp?itok=boT6NXys);
+}
+
+.imgcard3
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image/public/media/images/RS16812_iStock_000012297434_Large-scr_0.webp?itok=nCA6uJJZ);
+}
+
+.imgcard4
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/Deforestation%20in%20the%20Amazon%202.webp?itok=xjg89xBK);
+}
+
+.imgcard5
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/tree-facts-path-through-autumn-woods.webp?itok=Q9Cx9vLg);
+}
+
+.imgcard6
+{
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/NearYou.webp?itok=0JV5btyt);
+}
+
+.card h2
+{
+    filter: drop-shadow(2px 4px 6px black);
+    font-size: 2vw;
+    text-align: center;
+}
+.textcard
+{
+    display: flex;
+    padding: 10%;
+    justify-content: center;
+    text-align: center;
+    font-size: 10px;
+    color: azure;
+}
+
+                            /*Section 2 start*/
+
+
+
+/* picsection*/
+
+.picsec
+{
+    text-align: center;
+    font-size: large;
+    color: azure;
+}
+.picsec h2, .picsec p
+{
+    padding: 30px;
+    width: 50%;
+}
+.img
+{
+    width: 100%;
+    height: 60vh;
+    padding: 50px 4vw;
+    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/1920x1080_banner_bees.webp?itok=W3P9qlWc);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img h2
+{
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #5bb9a8;
+}
+
+/*footer*/
+footer
+{
+    background-color: #1a1616;
+    color: #b1b8c0;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    align-items: center;
+    text-align: start;
+}
+
+.footerChild1, .footerChild2, .footerChild3
+{
+    margin: 20px 0 0 0;
+}
+
+/*first child*/
+.footerChild1
+{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    width: 75%;
+    justify-content: center;
+}
+
+.footerChild1 ul, .footerChild3 ul
+{
+    list-style: none;
+}
+
+.footerChild1 li
+{
+    margin: 25px 1vw;
+}
+
+.footerChild1 a, .footerChild2 a, .footerChild3 a
+{
+    text-decoration: none;
+    color: #b1b8c0;
+}
+
+.footerChild1 a:hover, .footerChild2 a:hover, .footerChild3 a:hover
+{
+    color: #56a085;
+    border-bottom: 1px solid #56a085;
+}
+
+.footerChild1List
+{
+    margin: 10px 3vw;
+}
+
+.liBold
+{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/*second child*/
+
+.footerChild2
+{
+    width: 75%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerChild2 ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.footerChild2 li
+{
+    margin: 1vw;
+}
+
+.footerChild2 img
+{
+    width: 30px;
+}
+
+.footerChild2 a:hover
+{
+    border: none;
+}
+
+.footerChild2 a:hover img
+{
+    filter: brightness(.5);
+}
+
+/*third child*/
+
+.footerChild3
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: flex-start;
+}
+
+.footerChild3 ul
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: .9vw;
+}
+
+.footerChild3 li
+{
+    margin: 25px 2vw 25px 0;
+}
+
+.footerChild3Content p
+{
+    margin: 10px 0;
+    font-size: .9vw;
+    width: 80%;
+}
+
+.footerChild3Content a
+{
+    color: #56a085;
+}
+
+.footerChild3Content a:hover
+{
+    color: #35c287;
+}
+
+/*media code*/
+@media (max-width: 900px) 
+{
+    .card
+    {
+        width: 60vw;
+    }
+    .card:hover
+    {
+        width: 60vw;
+        height: 40vw;
+        .textcard
+        {
+            font-size: larger;
+        }
+    }
+    .imgcard1, .imgcard2, .imgcard3, .imgcard4, .imgcard5, .imgcard6
+    {
+        width: 60vw;
+        height: 20vw;
+        background-size: cover;
+    }
+    .cards h2
+    {
+        font-size: 4vw;
+    }
+} 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/asetss/css/Form_Style.css">
+</head>
+
+<body>
+    <div class="bg_img">
+        <div class="container">
+            <div class="title">Registration</div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="hidden" name="access_key" value="2e481b93-f7f5-4c73-a650-2001c28d02e1">
+                        <input type="text" id="name" name="name" placeholder="Enter your name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" id="email" name="email" placeholder="Enter your email">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number</span>
+                        <input type="text" id="phone" name="phone" placeholder="Enter your number">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">City</span>
+                        <input type="text" id="city" name="city" placeholder="Enter your City name">
+                    </div>
+                </div>
+                <div class="Food-details">
+                    <input type="radio" name="food-category" id="dot-1">
+                    <input type="radio" name="food-category" id="dot-2">
+                    <span class="food-category">Food category</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="food-category">Uncooked</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="food-category">Cooked</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/asetss/JS/Form.js"></script>
+</body>
+
+</html>

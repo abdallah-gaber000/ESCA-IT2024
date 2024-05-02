@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+.bg_img{
+    background: url(/asetss/img/Ubito.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.bg_img:after{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.5);
+}
+.container .title{
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0 0 35px 0;
+    font-family:'Montserrat', sans-serif;
+    position: relative;
+}
+.container .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background:rgb(199, 118, 19);
+}
+.container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+.user-details .input-box .details{
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px ;
+    transition: all 0.3s ease;
+}
+.user-details .input-box input:focus{
+    border-color: #9b59b6;
+}
+form .Food-details .food-category{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+form .Food-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+form .Food-details .category label{
+    display: flex;
+    align-items: center;
+}
+form .Food-details .category .dot{
+    height: 18px;
+    width: 18px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: rgb(199, 118, 19);
+}
+form input[type="radio"]{
+    display: none;
+}
+
+form .button{
+    height: 45px;
+    margin: 45px 0;
+}
+
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    background:linear-gradient(135deg, #df3e3e,rgb(199, 118, 19)) ;
+}
+form .button input:hover{
+    background:linear-gradient(-135deg, #df3e3e,rgb(199, 118, 19))
+}
+@media(max-width:584px){
+    .container{
+        max-width: 100%px;
+        }
+        form .user-details .input-box{
+            margin-bottom: 15px;
+            width: 100% ;
+        }
+        form .Food-details .category{
+            width: 100%;
+        }
+        .container form .user-details{
+            max-height: 300px;
+            overflow-y: scroll ;
+        }
+        .user-details::-webkit-scrollbar{
+            width: 0;
+        }
+            
+}
