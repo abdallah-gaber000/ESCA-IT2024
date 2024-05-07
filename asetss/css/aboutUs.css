@@ -6,6 +6,16 @@
     transition: 0.2s;
 
 }
+.navbar-nav .nav-link:hover, .navbar-brand:hover{
+  opacity: 0.7;
+}
+.link-text{
+  color: #fff;
+}
+.header a {
+    color: white;
+    text-decoration: none;
+}
 
 
         /*section 1 style*/

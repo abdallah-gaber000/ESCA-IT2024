@@ -9,6 +9,9 @@
 .link-text{
   color: #fff;
 }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #ff7300 ;
+}
 
 .awarness p{
   opacity: 0;
@@ -20,4 +23,144 @@
 a {
     text-decoration: none;
     color: #fff;
+}
+
+
+/*footer*/
+footer
+{
+    background-color: #1a1616;
+    color: #b1b8c0;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+    align-items: center;
+    text-align: start;
+}
+
+.footerChild1, .footerChild2, .footerChild3
+{
+    margin: 20px 0 0 0;
+}
+
+/*first child*/
+.footerChild1
+{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid gray;
+    width: 75%;
+    justify-content: center;
+}
+
+.footerChild1 ul, .footerChild3 ul
+{
+    list-style: none;
+}
+
+.footerChild1 li
+{
+    margin: 25px 1vw;
+}
+
+.footerChild1 a, .footerChild2 a, .footerChild3 a
+{
+    text-decoration: none;
+    color: #b1b8c0;
+}
+
+.footerChild1 a:hover, .footerChild2 a:hover, .footerChild3 a:hover
+{
+    color: #56a085;
+    border-bottom: 1px solid #56a085;
+}
+
+.footerChild1List
+{
+    margin: 10px 3vw;
+}
+
+.liBold
+{
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+/*second child*/
+
+.footerChild2
+{
+    width: 75%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerChild2 ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.footerChild2 li
+{
+    margin: 1vw;
+}
+
+.footerChild2 img
+{
+    width: 30px;
+}
+
+.footerChild2 a:hover
+{
+    border: none;
+}
+
+.footerChild2 a:hover img
+{
+    filter: brightness(.5);
+}
+
+/*third child*/
+
+.footerChild3
+{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    align-items: flex-start;
+}
+
+.footerChild3 ul
+{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    font-size: .9vw;
+}
+
+.footerChild3 li
+{
+    margin: 25px 2vw 25px 0;
+}
+
+.footerChild3Content p
+{
+    margin: 10px 0;
+    font-size: .9vw;
+    width: 80%;
+}
+
+.footerChild3Content a
+{
+    color: #56a085;
+}
+
+.footerChild3Content a:hover
+{
+    color: #35c287;
 }

@@ -58,21 +58,7 @@ $(window).on("resize", () => {
   }
 });
 // show paragraph texts when its in user view
-$(window).scroll(function () {
-  let elements = $(".awarness p");
-  for (let i = 0; i < elements.length; i++) {
-    if (!elements[i].classList.contains("fs-2")) {
-      let hT = $(`.awarness .num-${i}`).offset().top,
-        hH = $(`.awarness .num-${i}`).outerHeight(),
-        wH = $(window).height(),
-        wS = $(this).scrollTop();
-      if (wS > hT + hH - wH) {
-        // apply fade in animation
-        $(`.awarness .num-${i}`).css("opacity", 1);
-      }
-    }
-  }
-});
+
 // animate counters sequentially
 let endCounting = [false, false, false, false]; // make sure that each counters counted only once
 function animateCounters(index) {
@@ -108,6 +94,22 @@ $(window).scroll(function () {
         // start counting
         endCounting[i] = true;
         animateCounters(i);
+      }
+    }
+  }
+});
+
+$(window).scroll(function () {
+  let elements = $(".awarness p");
+  for (let i = 0; i < elements.length; i++) {
+    if (!elements[i].classList.contains("fs-2")) {
+      let hT = $(`.awarness .num-${i}`).offset().top,
+        hH = $(`.awarness .num-${i}`).outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > hT + hH - wH) {
+        // apply fade in animation
+        $(`.awarness .num-${i}`).css("opacity", 1);
       }
     }
   }
