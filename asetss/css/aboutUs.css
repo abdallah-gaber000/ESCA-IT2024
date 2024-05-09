@@ -16,7 +16,9 @@
     color: white;
     text-decoration: none;
 }
-
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #ff7300 ;
+}
 
         /*section 1 style*/
 .block1, .block2, .block3
@@ -45,7 +47,8 @@
 
 .block1child2 h2, .block3child2 h2
 {
-    color: #56a085 !important;
+    /* color: #56a085 !important; */
+    color: black;
     margin: 0 0 40px 0;
 }
 
@@ -75,7 +78,7 @@
 
 .block2child2 h2
 {
-    color: #5bb9a8;
+    /* color: #5bb9a8; */
     margin: 0 0 40px 0;
 }
 
@@ -86,7 +89,7 @@
 
 .block2
 {
-    background-color: #232f4a !important;
+    background-color: #53904d !important;
 }
 
 .block3child2Button
@@ -126,6 +129,7 @@
 {
     background-color: #f3f3f7;
     padding: 2vw;
+    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,7 +163,7 @@
 }
 .card
 {
-    background-color: #56a085;
+    background-color: #53904d;
     margin: 1vw;
     width: 25vw;
     height: 25%;
@@ -167,16 +171,23 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 3px 3px 10px #8d9d97;
+    transition: 1s;
 }
 /*card hover*/
 .card:hover
 {
+      transform: scale(1.11); 
+
     width: 24vw;
-    height: 30vw;
+    /* height: 30vw; */
     .textcard
     {
+        
         font-size: larger;
     }
+}
+.textcard {
+    height: 15vw;
 }
 .imgcard1, .imgcard2, .imgcard3, .imgcard4, .imgcard5, .imgcard6
 {
@@ -193,17 +204,17 @@
 
 .imgcard1
 {
-    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/RS26324_GettyImages-1213877331-lpr.webp?itok=c0eFXI7b);
+    background-image: url(/asetss/img/fish.jpeg);
 }
 
 .imgcard2
 {
-    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/Tiger%20in%20lake.webp?itok=boT6NXys);
+    background-image: url(/asetss/img/orang.jpeg);
 }
 
 .imgcard3
 {
-    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image/public/media/images/RS16812_iStock_000012297434_Large-scr_0.webp?itok=nCA6uJJZ);
+    background-image: url(/asetss/img/حبوب.jpeg);
 }
 
 .imgcard4
@@ -257,10 +268,12 @@
 .img
 {
     width: 100%;
-    height: 60vh;
+    height: 90vh;
     padding: 50px 4vw;
-    background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/1920x1080_banner_bees.webp?itok=W3P9qlWc);
+    background-image: url(/asetss/img/img\ static.jpeg);
     background-size: cover;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
