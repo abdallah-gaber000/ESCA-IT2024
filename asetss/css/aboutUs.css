@@ -20,12 +20,12 @@
   background-color: #ff7300 ;
 }
 
+
         /*section 1 style*/
 .block1, .block2, .block3
 {
     display: flex;
     background-color: #f3f3f7;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     padding: 30px;
@@ -42,13 +42,12 @@
 .block1child2, .block3child2
 {
     width: 40%;
-    color: #6b6b6f;
+    color: #6b6b6f; 
 }
 
 .block1child2 h2, .block3child2 h2
 {
-    /* color: #56a085 !important; */
-    color: black;
+    color: #ff7300 !important;
     margin: 0 0 40px 0;
 }
 
@@ -57,12 +56,13 @@
     font-weight: bold;
     width: 75%;
     font-size: xx-large;
+
 }
 
 .block1child2, .block2child2, .block3child2
 {
     text-align: start;
-    padding: 4vw;
+    padding: 4rem;
 }
 
 .block1child1 img, .block2child1 img, .block3child1 img
@@ -72,13 +72,13 @@
 
 .block2child2
 {
-    width: 40%;
+    width: 50%;
     color: azure;
 }
 
 .block2child2 h2
 {
-    /* color: #5bb9a8; */
+    color: #ff7300;
     margin: 0 0 40px 0;
 }
 
@@ -128,8 +128,8 @@
 .cards
 {
     background-color: #f3f3f7;
+    
     padding: 2vw;
-    /* height: 100vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,6 +163,7 @@
 }
 .card
 {
+    border: 1px solid red ;
     background-color: #53904d;
     margin: 1vw;
     width: 25vw;
@@ -171,23 +172,20 @@
     flex-direction: column;
     align-items: center;
     box-shadow: 3px 3px 10px #8d9d97;
-    transition: 1s;
+    /* transition: 3s; */
 }
 /*card hover*/
 .card:hover
 {
-      transform: scale(1.11); 
-
+/* -ms-transform: scale(1.5); IE 9 */
+  /* -webkit-transform: scale(1.5); Safari 3-8 */
+  /* transform: scale(1.11);  */
     width: 24vw;
     /* height: 30vw; */
     .textcard
     {
-        
         font-size: larger;
     }
-}
-.textcard {
-    height: 15vw;
 }
 .imgcard1, .imgcard2, .imgcard3, .imgcard4, .imgcard5, .imgcard6
 {
@@ -217,7 +215,7 @@
     background-image: url(/asetss/img/حبوب.jpeg);
 }
 
-.imgcard4
+/* .imgcard4
 {
     background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/Deforestation%20in%20the%20Amazon%202.webp?itok=xjg89xBK);
 }
@@ -230,7 +228,7 @@
 .imgcard6
 {
     background-image: url(https://cdn.friendsoftheearth.uk/sites/default/files/styles/hero_image_1920x1080/public/media/images/NearYou.webp?itok=0JV5btyt);
-}
+} */
 
 .card h2
 {
@@ -272,11 +270,10 @@
     padding: 50px 4vw;
     background-image: url(/asetss/img/img\ static.jpeg);
     background-size: cover;
-    /* background-size: contain; */
-    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .img h2
@@ -284,7 +281,8 @@
     margin-bottom: 20px;
     font-size: xx-large;
     font-weight: bold;
-    color: #5bb9a8;
+    color: #ff7300;
+    
 }
 
 /*footer*/
@@ -436,7 +434,7 @@ footer
     .card:hover
     {
         width: 60vw;
-        height: 40vw;
+        /* height: 40vw; */
         .textcard
         {
             font-size: larger;
@@ -453,3 +451,35 @@ footer
         font-size: 4vw;
     }
 } 
+@media (max-width: 844PX) {
+    .block1, .block2, .block3, .block4, .block5{
+        flex-direction: column !important;
+    }
+    .block1child2, .block2child2, .block3child2
+     {
+        width: 90%;
+        margin: auto;
+        /* font-size: 20px; */
+    }
+    .block1child1, .block2child1, .block3child1
+{
+    width: 80%;
+}
+.block1child2 p, .block2child2 p, .block3child2 p
+     {
+        font-size: 10px;
+    }
+}
+
+/* @media (max-width: 410PX) {
+    .block1child2 h2, .block2child2 h2, .block3child2 h2
+     {
+        width: 100%;
+        border: 1px solid red;
+        margin: auto;
+    }
+    .block1child1, .block2child1, .block3child1
+{
+    width: 100%;
+}
+} */
