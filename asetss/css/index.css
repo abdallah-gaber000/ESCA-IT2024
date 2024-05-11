@@ -9,10 +9,13 @@
 .link-text{
   color: #fff;
 }
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+.btn-warning{
   background-color: #ff7300 ;
+  border: none;
 }
-
+.btn-warning:hover{
+    background-color: #ec6c03;
+}
 .awarness p{
   opacity: 0;
   transition: 2s;

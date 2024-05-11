@@ -8,6 +8,12 @@ if ($(window).scrollTop() > 0) {
   $("nav").removeClass("py-4");
   $(".navbar-brand, .navbar-nav").removeClass("py-2");
 }
+// give priority to images once window is less than 975px
+if ($(window).width() < 975) {
+  $(".awarness .give-priority").css("order", -1);
+} else {
+  $(".awarness .give-priority").css("order", 0);
+}
 /* 
     remove padding and transparent from the nav once scrolling down start, 
     return them back once we are on the top of the page
@@ -57,6 +63,7 @@ $(window).on("resize", () => {
     }
   }
 });
+
 // show paragraph texts when its in user view
 $(window).scroll(function () {
   let elements = $(".awarness p");
