@@ -100,7 +100,7 @@ function animateCounters(index) {
   // set delay 1 second for counters
   setTimeout(() => {
     updateCounter();
-  }, 100);
+  }, 1000);
 }
 // start counting when counter section is on user view
 $(window).scroll(function () {

@@ -145,7 +145,7 @@
 .textAboveCards
 {
     margin: 0 0 25px 0;
-    color: #56a085;
+    color: #ff7300;
     font-size: xx-large;
 }
 
@@ -168,7 +168,7 @@
 }
 .card
 {
-    border: 1px solid red ;
+    /* border: 1px solid red ; */
     background-color: #53904d;
     margin: 1vw;
     width: 25vw;
@@ -265,7 +265,7 @@
 }
 .picsec h2, .picsec p
 {
-    /* padding: 30px; */
+    padding: 30px;
     width: 70%;
 
 }
