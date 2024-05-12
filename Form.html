@@ -13,10 +13,13 @@
         <div class="container">
             <div class="title">Registration</div>
             <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="05455e10-07a2-4d62-834a-76287fbb89d0">
+
                 <div class="user-details">
                     <div class="input-box">
                         <span class="details">Full Name</span>
-                        <input type="hidden" name="access_key" value="05455e10-07a2-4d62-834a-76287fbb89d0">
+                        <!-- <input type="hidden" name="access_key" value="05455e10-07a2-4d62-834a-76287fbb89d0"> -->
+
                         <input type="text" id="name" name="name" placeholder="Enter your name">
                     </div>
                     <div class="input-box">
@@ -31,22 +34,51 @@
                         <span class="details">City</span>
                         <input type="text" id="city" name="city" placeholder="Enter your City name">
                     </div>
-                </div>
-                <div class="Food-details">
-                    <input type="radio" name="food-category" id="dot-1">
-                    <input type="radio" name="food-category" id="dot-2">
-                    <span class="food-category">Food category</span>
-                    <div class="category">
-                        <label for="dot-1">
-                            <span class="dot one"></span>
-                            <span class="food-category">Uncooked</span>
-                        </label>
-                        <label for="dot-2">
-                            <span class="dot two"></span>
-                            <span class="food-category">Cooked</span>
-                        </label>
+                    <div class="input-box">
+                        <span class="details">Adress</span>
+                        <input type="text" id="adress" name="adress" placeholder="Enter your adress name">
                     </div>
+                    <div class="input-box">
+                        <span class="details">Jop Titel</span>
+                        <input type="text" id="Jop-Titel" name="Jop-Titel" placeholder="Enter your Jop Titel name">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Type of food weast</span>
+                        <input type="text" id="typefood" name="typefood" placeholder="cooked/Uncooked ">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">what food weast</span>
+                        <input type="text" id="foodweast" name="foodweast"
+                            placeholder="carbohydrates/ fruit weast /fish weast">
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">How much per week?</span>
+                        <input type="text" id="perweek" name="perweek" placeholder="Kg/Tons">
+                    </div>
+
+
+
+                    <!-- <div class="Food-details"> -->
+
+
+                    <!-- <input type="hidden" name="access_key" value="05455e10-07a2-4d62-834a-76287fbb89d0"> -->
+                    <!-- <input type="radio" name="food-category" id="dot-1">
+                        <input type="radio" name="food-category" id="dot-2">
+                        <span class="food-category">Food category</span>
+                        <div class="category">
+                            <label for="dot-1">
+                                <span class="dot one"></span>
+                                <span class="food-category">Uncooked</span>
+                            </label>
+                            <label for="dot-2">
+                                <span class="dot two"></span>
+                                <span class="food-category">Cooked</span>
+                            </label>
+                        </div> -->
+                    <!-- </div> -->
                 </div>
+
                 <div class="button">
                     <input type="submit" value="Register">
                 </div>
