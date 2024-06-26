@@ -336,8 +336,8 @@ footer
 
 .footerChild1 a:hover, .footerChild2 a:hover, .footerChild3 a:hover
 {
-    color: #56a085;
-    border-bottom: 1px solid #56a085;
+    color: #ff7300;
+    /* border-bottom: 1px solid #ff7300; */
 }
 
 .footerChild1List
@@ -383,6 +383,7 @@ footer
 .footerChild2 a:hover
 {
     border: none;
+    text-decoration: none;
 }
 
 .footerChild2 a:hover img
@@ -422,12 +423,13 @@ footer
 
 .footerChild3Content a
 {
-    color: #56a085;
+    color: #6b6b6f;
 }
 
 .footerChild3Content a:hover
 {
-    color: #35c287;
+    color: #ff7300;
+    text-decoration: none;
 }
 
 /*media code*/
