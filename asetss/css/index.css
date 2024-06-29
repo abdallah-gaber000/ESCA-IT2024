@@ -71,7 +71,9 @@ footer
     text-decoration: none;
     color: #b1b8c0;
 }
-
+.footerChild1 ul {
+    display: flex;
+}
 .footerChild1 a:hover, .footerChild2 a:hover, .footerChild3 a:hover
 {
     color: #56a085;
